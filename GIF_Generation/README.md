@@ -26,3 +26,10 @@ a) This will create "extractedForMatlab" file in the directory from which you ra
 3) Generate GIFs
     a) Navigate to the new folder Matlab made "GIFImages"
     b) Run the "CreateGIFs.sh" script.
+    
+    
+    
+     Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
