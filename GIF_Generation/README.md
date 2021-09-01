@@ -1,16 +1,12 @@
-Prerequisites
-Software needed:
-- Matlab
-- Linux OS for running bash (.sh) scripts
-- gifsicle
 
-
-~~~
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
-3. Test
+1. Software needed:
+    1. Matlab
+    2. Linux OS for running bash (.sh) scripts
+    3. gifsicle
+2. Files needed
+    1. Matlab
+3. test
+5. Test
     1. test 23
 ~~~
 
