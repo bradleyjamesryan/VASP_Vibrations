@@ -6,7 +6,7 @@ axLineWidth = 1.5; plotLineWidth = 2; gridTransparency = .15; textSize = 16;
 LabelSize = 24; titleFontSize = 24; AxisNumberSize = 22; LegFontSize = 14;  zz = 1;
 FWHM = 30; x = [0:0.25:4000]; gamma = FWHM./2; count = 0;
 
-data = dlmread('~/Desktop/vasp_raman.dat','',1,0);
+data = dlmread('path/to/vasp_raman.dat','',1,0);
 
 clf(figure(2)); hold on;
 
