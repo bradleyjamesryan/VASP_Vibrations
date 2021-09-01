@@ -1,10 +1,10 @@
-## Prerequisites
-### Software needed:
+Prerequisites
+Software needed:
     a) Matlab
     b) Linux OS for running bash (.sh) scripts
     c) gifsicle
 
-### Files needed:
+Files needed:
     a) OUTCAR
     b) CONTCAR
     c) /intensities/results/results.txt
