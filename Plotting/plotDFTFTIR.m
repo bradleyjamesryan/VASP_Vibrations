@@ -22,8 +22,6 @@ end
 laurentz = 10.^(-(normalize([laurentz]').*1 - 2));
 plot(x,normalize(laurentz)+count,'r')
 
-data2 = 10.^(-(data(:,3)));
-data2 = normalize(data2);
 data2 = normalize(data(:,3));
 
 for ii = 1:length(data)
