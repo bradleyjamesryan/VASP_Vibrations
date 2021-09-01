@@ -1,3 +1,4 @@
+## Prerequisites
 ### Software needed:
     a) Matlab
     b) Linux OS for running bash (.sh) scripts
