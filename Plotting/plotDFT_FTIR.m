@@ -4,8 +4,7 @@ clear; clc;
 set(0,'defaultAxesFontName', 'Arial');
 axLineWidth = 1.5; plotLineWidth = 2; LabelSize = 24; AxisNumberSize = 22; 
 
-FWHM = 50; 
-x = [0:0.25:4000]; gamma = FWHM./2; count = 0;
+FWHM = 50; x = [0:0.25:4000]; gamma = FWHM./2; count = 0;
 
 data = dlmread('/path/to/data/intensities/results/exact.res.txt');
 
@@ -41,11 +40,9 @@ set(gca,'linewidth',axLineWidth,'XMinorTick','on','YMinorTick','on','fontsize',A
 xlabel('Wavenumber (cm^{-1})','FontSize', LabelSize, 'fontweight','b','color','k','FontName','Arial Bold');
 ylabel('Transmittance (Arb. Units)','FontSize', LabelSize, 'fontweight','b','color','k','FontName','Arial Bold');
 set(gca,'ytick','')
-
 box on; grid off; ax = gca; ax.XColor = 'k';ax.YColor = 'k';
 
 function output = normalize(x_z)
-
 if size(x_z,2) > 1
     output(:,1) = x_z(:,1);
     output(:,2) = (x_z(:,2) - min(x_z(:,2)))./(max(x_z(:,2)) - min(x_z(:,2)));
