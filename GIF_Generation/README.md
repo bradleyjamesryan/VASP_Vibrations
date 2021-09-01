@@ -1,21 +1,16 @@
-
+## Prerequisites
 1. Software needed:
     1. Matlab
     2. Linux OS for running bash (.sh) scripts
     3. gifsicle
 2. Files needed
-    1. Matlab
-3. test
-5. Test
-    1. test 23
-~~~
+    1. OUTCAR
+    2. CONTCAR
+    3. /intensities/results/results.txt
+   
+   
+## Instructions
 
-
-
-Files needed:
-- OUTCAR
-- CONTCAR
-- /intensities/results/results.txt
 
 1) Extraction vibrational modes from OUTCAR with the ExtractFTIRModes_V2.sh script
 - Determine total number of atoms in CONTCAR
