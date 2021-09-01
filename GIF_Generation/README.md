@@ -9,9 +9,7 @@ Files needed:
     b) CONTCAR
     c) /intensities/results/results.txt
 
-## Instructions
- Markup : 1. 
-              1. Extraction vibrational modes from OUTCAR with the ExtractFTIRModes_V2.sh script 
+1) Extraction vibrational modes from OUTCAR with the ExtractFTIRModes_V2.sh script 
 a) Determine total number of atoms in CONTCAR
 b) Navigate to where your OUTCAR file is
 c) Run ExtractFTIRModes_V2.sh, then enter the total number of atoms in CONTCAR from step 2a
