@@ -4,7 +4,9 @@ clear; clc;
 set(0,'defaultAxesFontName', 'Arial');
 axLineWidth = 1.5; plotLineWidth = 2; LabelSize = 24; AxisNumberSize = 22; 
 
-FWHM = 30; x = [0:0.25:4000]; gamma = FWHM./2; count = 0;
+FWHM = 30; 
+x = [0:0.25:4000]; gamma = FWHM./2; count = 0;
+
 data = dlmread('path/to/vasp_raman.dat','',1,0);
 
 clf(figure(1)); hold on; f = figure(1);  f.Position = [1 34 959 970];
@@ -27,6 +29,3 @@ set(gca,'linewidth',axLineWidth,'XMinorTick','on','YMinorTick','on','fontsize',A
 xlabel('Raman Shift (cm^{-1})','FontSize', LabelSize, 'fontweight','b','color','k','FontName','Arial Bold');
 ylabel('Raman Scattering (Arb. Units)','FontSize', LabelSize, 'fontweight','b','color','k','FontName','Arial Bold');
 box on; grid off; ax = gca; ax.XColor = 'k';ax.YColor = 'k';
-
-
-
