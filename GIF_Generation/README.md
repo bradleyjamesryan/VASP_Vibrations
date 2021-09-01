@@ -1,4 +1,4 @@
-Software needed
+- Software needed
 1) Matlab
 2) Linux OS for running bash (.sh) scripts
 3) gifsicle
