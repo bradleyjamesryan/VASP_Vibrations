@@ -4,7 +4,8 @@ clear; clc;
 set(0,'defaultAxesFontName', 'Arial');
 axLineWidth = 1.5; plotLineWidth = 2; LabelSize = 24; AxisNumberSize = 22; 
 
-FWHM = 50; x = [0:0.25:4000]; gamma = FWHM./2; count = 0;
+FWHM = 50; 
+x = [0:0.25:4000]; gamma = FWHM./2; count = 0;
 
 data = dlmread('/path/to/data/intensities/results/exact.res.txt');
 
