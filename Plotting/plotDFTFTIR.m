@@ -1,5 +1,5 @@
-%This is to be used in conjunction with DFT FTIR simulations
-% Data are fit to a laurentz distribution with a FWHM defined by the FWHM variable
+% This is to be used in conjunction with DFT FTIR simulations
+% Data are fit to a Lorentzian distribution with a FWHM defined by the FWHM variable
 clear; clc;
 set(0,'defaultAxesFontName', 'Arial');
 axLineWidth = 1.5; plotLineWidth = 2; LabelSize = 24; AxisNumberSize = 22; 
@@ -14,13 +14,13 @@ data(:,2) = calibrate(data(:,2));
 
 clf(figure(1)); hold on;
 f = figure(1);  f.Position = [1 34 959 970];
-laurentz = zeros(1,length(x));
+Lorentzian = zeros(1,length(x));
 for jj = 1:length(data)
     I = data(jj,3);        xo = data(jj,2);
-    laurentz =  laurentz + I.*[normalize([(gamma.^2)./((x - xo).^2 + gamma.^2)]')]';
+    Lorentzian =  Lorentzian + I.*[normalize([(gamma.^2)./((x - xo).^2 + gamma.^2)]')]';
 end 
-laurentz = 10.^(-(normalize([laurentz]').*1 - 2));
-plot(x,normalize(laurentz)+count,'r')
+Lorentzian = 10.^(-(normalize([Lorentzian]').*1 - 2));
+plot(x,normalize(Lorentzian)+count,'r')
 
 data2 = normalize(data(:,3));
 
