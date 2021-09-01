@@ -4,6 +4,16 @@ Software needed:
 - Linux OS for running bash (.sh) scripts
 - gifsicle
 
+
+~~~
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
+~~~
+
+
+
 Files needed:
 - OUTCAR
 - CONTCAR
