@@ -1,7 +1,7 @@
-Software needed:
-    a) Matlab
-    b) Linux OS for running bash (.sh) scripts
-    c) gifsicle
+Software needed
+a) Matlab
+b) Linux OS for running bash (.sh) scripts
+c) gifsicle
 
 Files needed:
     a) OUTCAR
