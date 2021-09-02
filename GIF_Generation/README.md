@@ -14,7 +14,7 @@
 1. Extract vibrational modes from OUTCAR with the ExtractFTIRModes_FromOUTCAR.sh script
     1. Determine total number of atoms in CONTCAR
     2. Navigate to where your OUTCAR file is
-    3. Run ExtractFTIRModes_FromOUTCAR.sh, then enter the total number of atoms in CONTCAR from step 2a
+    3. Run ExtractFTIRModes_FromOUTCAR.sh, then enter the total number of atoms in the CONTCAR file from step 1i.
     4. This will create "extractedForMatlab" file in the directory from which you ran 
 
 2. Generate images with Matlab
