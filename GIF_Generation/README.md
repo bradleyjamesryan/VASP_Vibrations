@@ -4,7 +4,7 @@
     1. Matlab
     2. Linux OS for running bash (.sh) scripts
     3. gifsicle
-2. Files needed
+2. Files needed:
     1. OUTCAR
     2. CONTCAR
     3. /intensities/results/results.txt
