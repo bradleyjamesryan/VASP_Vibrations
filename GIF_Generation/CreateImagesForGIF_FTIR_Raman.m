@@ -1,13 +1,15 @@
 clear; clc;
-CONTCARPATH =  '/home/anon/Documents/GraduateSchool/Data/Group IV/DFT/2021_06_02_SiD_Vibrations/12Inserted'
+CONTCARPATH =  '/path/to/CONTCAR location'
 cd(CONTCARPATH);
-results = dlmread('/home/anon/Documents/GraduateSchool/Data/Group IV/DFT/2021_06_02_SiD_Vibrations/12Inserted/intensities/results/results.txt');
+results = dlmread('/path/to/intensities/results/results.txt');
 fid = fopen('CONTCAR');
 WavelengthRange = [350 5000];
-nstep = 10; scale = 1; zz = 1;
+nstep = 10; % Number of discrete steps the vibration is broken into.
+scale = 1; % Scale factor for amplifying/supressing the amiplitufde of vibration
+zz = 1;
 
 %% OUTPUT of extractedForMatlab goes here
- 
+ % Note: The data below (lines 13 to 13069) is only used for demonstration purposes. You will need to remove it and replace it with you data.
   freq(zz) =  1541.405522 ;
              data{zz} = [
       2.807274  9.610752 11.327354     0.260783   -0.150616   -0.546811  
