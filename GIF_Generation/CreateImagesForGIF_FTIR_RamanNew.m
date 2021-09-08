@@ -3,10 +3,12 @@ CONTCARPATH =  '/home/anon/Documents/GraduateSchool/Data/Group IV/DFT/2021_06_02
 cd(CONTCARPATH);
 results = dlmread([CONTCARPATH '/intensities/results/results.txt']);
 fid = fopen('CONTCAR');
-WavelengthRange = [350 5000]; %SKill all vibrational modes outside this range. Units are cm^{-1}
-nstep = 10; scale = 1; zz = 1;
+WavelengthRange = [350 5000]; %Skip all vibrational modes outside this range. Units are cm^{-1}
+nstep = 10; 
+scale = 1;
+zz = 1;
 
-%% OUTPUT of extractedForMatlab goes here
+%% Read extracted data from the "extractedForMatlab.m" file that was generated from "ExtractFTIRModes_FromOUTCAR.sh"
  extractedForMatlab
 
 %% End of extractedForMatlab goes here
