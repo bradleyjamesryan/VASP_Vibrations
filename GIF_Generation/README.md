@@ -15,7 +15,7 @@
     1. Determine total number of atoms in the CONTCAR file.
     2. Navigate to where the location of the OUTCAR file.
     3. Run 01_ExtractFTIRModes_FromOUTCAR.sh, then enter the total number of atoms in the CONTCAR file from step 1i.
-       - This will create a "extractedForMatlab.m" file in the directory from which you ran "ExtractFTIRModes_FromOUTCAR.sh"
+       - This will create a "extractedForMatlab.m" file in the directory from which you ran "01_ExtractFTIRModes_FromOUTCAR.sh"
 
 2. Generate images with Matlab
     1. Open the "02_CreateImagesForGIF_FTIR_Raman.m" file in matlab and change the CONTCARPATH at top of the script to the appropriate paths.
