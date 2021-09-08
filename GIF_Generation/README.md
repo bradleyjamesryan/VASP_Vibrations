@@ -11,17 +11,17 @@
    
    
 ## Instructions
-1. Extract vibrational modes from OUTCAR with the ExtractFTIRModes_FromOUTCAR.sh script
+1. Extract vibrational modes from OUTCAR with the 01_ExtractFTIRModes_FromOUTCAR.sh script
     1. Determine total number of atoms in the CONTCAR file.
     2. Navigate to where the location of the OUTCAR file.
-    3. Run ExtractFTIRModes_FromOUTCAR.sh, then enter the total number of atoms in the CONTCAR file from step 1i.
+    3. Run 01_ExtractFTIRModes_FromOUTCAR.sh, then enter the total number of atoms in the CONTCAR file from step 1i.
        - This will create a "extractedForMatlab.m" file in the directory from which you ran "ExtractFTIRModes_FromOUTCAR.sh"
 
 2. Generate images with Matlab
-    1. Open the "CreateImagesForGIF_FTIR_Raman.m" file in matlab and change the CONTCARPATH at top of the script to the appropriate paths.
-    2. Run MATLAB code (CreateImagesForGIF_FTIR_Raman.m).
+    1. Open the "02_CreateImagesForGIF_FTIR_Raman.m" file in matlab and change the CONTCARPATH at top of the script to the appropriate paths.
+    2. Run MATLAB code (02_CreateImagesForGIF_FTIR_Raman.m).
 
 3. Generate GIFs
     1. Navigate to the new folder Matlab made "GIFImages"
-    2. Run the "CreateGIFs.sh" script.
+    2. Run the "03_CreateGIFs.sh" script.
 
