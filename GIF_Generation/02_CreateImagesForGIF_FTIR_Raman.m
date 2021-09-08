@@ -1,4 +1,5 @@
 %% Note: This code is written for CONTCAR files containing Si, H, and O. (line 65-71). If you are using different atoms, you must change this.
+%% Second: the calibration on line 44 was optimized for Silicon nanosheets. It may or may not apply to your material system. See ___ for details of calibration.
 clear; clc;
 CONTCARPATH =  '/home/anon/Documents/GraduateSchool/Data/Group IV/DFT/2021_06_02_SiD_Vibrations/2020_12_16_TwoInsertedOxygen4x4/Config2';
 cd(CONTCARPATH);
