@@ -98,7 +98,15 @@ for gg = 1:length(freq)
         end
         cd ..
     else
-        disp(['Skipping mode ' num2str(gg) '/' num2str(zz) ' (intensity very low or outside user-defined wavenumer range)'])
+        if (freq(gg) > max(WavelengthRange))
+           disp(['Skipping mode ' num2str(gg) '/' num2str(zz) ' (Above user-defined wavenumber range)'])
+        end
+        if (freq(gg) < min(WavelengthRange))
+            disp(['Skipping mode ' num2str(gg) '/' num2str(zz) ' (Below user-defined wavenumber range)'])
+        end
+        if (results(gg,3) <= 0.00999)
+            disp(['Skipping mode ' num2str(gg) '/' num2str(zz) ' (Intensity very low)'])
+        end
     end
 end
 
