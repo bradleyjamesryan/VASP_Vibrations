@@ -12,7 +12,7 @@ sed 's/cm-1.*/;/' dummy3 | sed 's/--/];/' |sed '0,/ zz = zz+1;/s///' > dummy4
 
 echo '];' >> dummy4
 
-sed '0,/];/s// /' dummy4 > extractedForMatlab
+sed '0,/];/s// /' dummy4 > extractedForMatlab.m
 
 
 rm dummy dummy2 dummy3 dummy4
