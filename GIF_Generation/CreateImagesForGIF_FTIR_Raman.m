@@ -4,8 +4,8 @@ cd(CONTCARPATH);
 results = dlmread([CONTCARPATH '/intensities/results/results.txt']);
 fid = fopen('CONTCAR');
 WavelengthRange = [350 5000]; %Skip all vibrational modes outside this range. Units are cm^{-1}
-nstep = 10; 
-scale = 1;
+nstep = 10; %Number of discrete steps for each mode. 
+scale = 1; %Amplification factor for visualizing vibrational mode. Amplitude of displacement will get multipled by "scale"
 zz = 1;
 
 %% Read extracted data from the "extractedForMatlab.m" file that was generated from "ExtractFTIRModes_FromOUTCAR.sh"
