@@ -28,16 +28,15 @@ for ii = 1:length(data)
    plot([data(ii,2) data(ii,2)],[1 1-data2(ii)],'b') 
 end
 
-set(gca,'xdir','reverse','xscale','log')
-set(gca,'xtick',[500:100:4000])
-set(gca,'xticklabel',{'500' '' '' '' '' '1000'...
-    '' '' '' '' '' '' '' '' '' '2000'...
-    '' '' '' '' '' '' '' '' '' ''...
-    '' '' '' '' '' '' '' '' '' '4000'})
 
-xlim([500 4000]);
+
 set(findall(gca, 'Type', 'Line'),'LineWidth',plotLineWidth);
 set(gca,'linewidth',axLineWidth,'XMinorTick','on','YMinorTick','on','fontsize',AxisNumberSize,'tickdir','out','MinorGridLineStyle','-');
+set(gca,'xtick',[500 1000 1500 2000 2500 3000 3500 4000]);
+set(gca,'xticklabel',{'500' '1000' '' '2000' '' '' '' '4000'});
+ax = gca; ax.XAxis.MinorTickValues = [600:100:900 1100:100:1400 1600:100:1900 2100:100:2400 2600:100:2900 3100:100:3400 3600:100:3900];
+set(gca,'xdir','reverse','ytick',''); set(gca,'xscale','log');
+xlim([500 4000]);
 xlabel('Wavenumber (cm^{-1})','FontSize', LabelSize, 'fontweight','b','color','k','FontName','Arial Bold');
 ylabel('Transmittance (Arb. Units)','FontSize', LabelSize, 'fontweight','b','color','k','FontName','Arial Bold');
 set(gca,'ytick','')
