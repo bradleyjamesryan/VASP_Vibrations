@@ -18,8 +18,8 @@
        - This will create a "extractedForMatlab.m" file in the directory from which you ran "01_ExtractFTIRModes_FromOUTCAR.sh"
 
 2. Generate images with Matlab
-    1. Open the "02_CreateImagesForGIF_FTIR_Raman.m" file in matlab and change the CONTCARPATH at top of the script to the appropriate paths.
-    2. Run MATLAB code (02_CreateImagesForGIF_FTIR_Raman.m).
+    1. Open the "CreateImagesForGIF_FTIR_Raman.m" file in matlab and change the CONTCARPATH at top of the script to the appropriate paths.
+    2. Run MATLAB code (CreateImagesForGIF_FTIR_Raman.m).
 
 3. Generate GIFs
     1. Navigate to the new folder Matlab made "GIFImages"
