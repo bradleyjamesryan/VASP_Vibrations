@@ -8,8 +8,8 @@ https://github.com/raman-sc/VASP
 
 cp CONTCAR POSCAR  
 mkdir PHONON
-     mv * PHONON/.
-     cp PHONON/KPOINTS .
+mv * PHONON/.
+cp PHONON/KPOINTS .
      cp PHONON/OUTCAR .
      cp PHONON/POTCAR .
      ln -s PHONON/OUTCAR OUTCAR.phon
