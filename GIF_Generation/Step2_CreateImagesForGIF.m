@@ -8,6 +8,7 @@ if exist('intensities','dir')
 else
     results = dlmread([CONTCARPATH '/vasp_raman.dat'],'',1,0);
     results = results(:,[1 2 5]);
+    results(:,3) = normalize(results(:,3));
     calibrate = @(x) 0.996.*x + 3.94;
 end
 
@@ -134,4 +135,14 @@ plot3([0 vectors(1,1)],[0 vectors(1,2)],[0 vectors(1,3)]+vectors(3,3),'k-')
 plot3([0 vectors(2,1)],[0 vectors(2,2)],[0 vectors(2,3)]+vectors(3,3),'k-')
 plot3([0 vectors(2,1)]+vectors(1,1),[0 vectors(2,2)]+vectors(1,2),[0 vectors(2,3)]+vectors(3,3),'k-')
 plot3([0 vectors(1,1)]+vectors(2,1),[0 vectors(1,2)]+vectors(2,2),[0 vectors(1,3)]+vectors(3,3),'k-')
+end
+
+
+function output = normalize(x_z)
+if size(x_z,2) > 1
+    output(:,1) = x_z(:,1);
+    output(:,2) = (x_z(:,2) - min(x_z(:,2)))./(max(x_z(:,2)) - min(x_z(:,2)));
+else
+    output = (x_z - min(x_z))./(max(x_z) - min(x_z));
+end
 end
