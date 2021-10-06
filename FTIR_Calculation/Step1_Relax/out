@@ -1,0 +1,24 @@
+ running on   16 total cores
+ distrk:  each k-point on   16 cores,    1 groups
+ distr:  one band on    8 cores,    2 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Aug 06 2018 12:32:45) complex          
+  
+ POSCAR found :  2 types and       4 ions
+ LDA part: xc-table for Pade appr. of Perdew
+ found WAVECAR, reading the header
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ initial charge from wavefunction
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.174905851052E+02   -0.17491E+02   -0.97289E-07  1456   0.592E-03    0.766E-04
+DAV:   2    -0.174905851089E+02   -0.36332E-08   -0.66459E-08  1124   0.172E-03
+   1 F= -.17490585E+02 E0= -.17490585E+02  d E =-.174906E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.607E-05 g(S)=  0.255E-05 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.863E-05
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions
