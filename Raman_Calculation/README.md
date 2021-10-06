@@ -5,8 +5,8 @@
 3. After the relaxation has completed, copy the "Step1_Relax" folder to a new folder (Step2_FiniteDiff), copy CONTCAR to POSCAR, and run a finite difference calculation. See provided example in "Step2_FiniteDiff".
 3. After the finite difference calculation has completed, copy the "Step2_FiniteDiff" folder to a new folder (Step3_Raman), navigate to the Step3_Raman folder, issue the commands below, and then run the vasp_raman.py script. See provided example in "Step3_Raman".
 
-     cp CONTCAR POSCAR  <br />
-     mkdir PHONON <br />
+     cp CONTCAR POSCAR  
+     mkdir PHONON  
      mv * PHONON/. <br />
      cp PHONON/KPOINTS . <br />
      cp PHONON/OUTCAR . <br />
