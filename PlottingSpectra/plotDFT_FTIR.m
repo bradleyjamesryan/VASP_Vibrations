@@ -7,7 +7,7 @@ axLineWidth = 1.5; plotLineWidth = 2; LabelSize = 24; AxisNumberSize = 22;
 FWHM = 50; 
 x = [0:0.25:4000]; gamma = FWHM./2; count = 0;
 
-data = dlmread('/path/to/data/intensities/results/exact.res.txt');
+data = dlmread('/path/to/Step2_FTIR/intensities/results/exact.res.txt');
 
 calibrate = @(x) 0.951.*x + 49.2; % This might be specific to silicon  nanosheets
 data(:,2) = calibrate(data(:,2));
