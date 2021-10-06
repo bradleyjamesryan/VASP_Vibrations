@@ -29,3 +29,13 @@ set(gca,'linewidth',axLineWidth,'XMinorTick','on','YMinorTick','on','fontsize',A
 xlabel('Raman Shift (cm^{-1})','FontSize', LabelSize, 'fontweight','b','color','k','FontName','Arial Bold');
 ylabel('Raman Scattering (Arb. Units)','FontSize', LabelSize, 'fontweight','b','color','k','FontName','Arial Bold');
 box on; grid off; ax = gca; ax.XColor = 'k';ax.YColor = 'k';
+
+
+function output = normalize(x_z)
+if size(x_z,2) > 1
+    output(:,1) = x_z(:,1);
+    output(:,2) = (x_z(:,2) - min(x_z(:,2)))./(max(x_z(:,2)) - min(x_z(:,2)));
+else
+    output = (x_z - min(x_z))./(max(x_z) - min(x_z));
+end
+end
