@@ -13,10 +13,10 @@ mv * PHONON/.
 
 cp PHONON/KPOINTS .
 cp PHONON/OUTCAR .
-     cp PHONON/POTCAR .
-     ln -s PHONON/OUTCAR OUTCAR.phon
-     ln -s PHONON/POSCAR POSCAR.phon
-     ln -s PHONON/POTCAR POTCAR.phon
+     cp PHONON/POTCAR . 
+     ln -s PHONON/OUTCAR OUTCAR.phon 
+     ln -s PHONON/POSCAR POSCAR.phon 
+     ln -s PHONON/POTCAR POTCAR.phon 
      echo 'ISTART = 0
      LEPSILON = .TRUE.
      NWRITE = 3
