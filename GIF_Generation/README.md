@@ -22,7 +22,7 @@
        - This will create a "extractedForMatlab.m" file in the directory from which you ran "Step1_ExtractModes_FromOUTCAR.sh"
 
 2. Generate images with Matlab
-    1. Open the "Step2_CreateImagesForGIF.m" file in matlab and change the CONTCARPATH at top of the script to the appropriate paths.
+    1. Open the "Step2_CreateImagesForGIF.m" file in matlab and change the CONTCARPATH at top of the script to the appropriate paths (i.e., Step2_FTIR or Step3_Raman).
     2. Run MATLAB code (Step2_CreateImagesForGIF.m).
 
 3. Generate GIFs
