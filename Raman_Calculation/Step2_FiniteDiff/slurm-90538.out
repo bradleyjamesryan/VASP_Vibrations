@@ -1,2 +1,0 @@
-rm: cannot remove ‘out*’: No such file or directory
-mkdir: cannot create directory ‘ToDownload’: File exists
