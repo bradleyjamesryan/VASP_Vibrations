@@ -6,8 +6,11 @@
 3. After the finite difference calculation has completed, copy the "Step2_FiniteDiff" folder to a new folder (Step3_Raman), navigate to the Step3_Raman folder, issue the commands below, and then run the vasp_raman script. See provided example in "Step3_Raman".
 
 cp CONTCAR POSCAR  
+
 mkdir PHONON
+
 mv * PHONON/.
+
 cp PHONON/KPOINTS .
 cp PHONON/OUTCAR .
      cp PHONON/POTCAR .
