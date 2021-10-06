@@ -17,7 +17,7 @@
 
 1. Extract vibrational modes from OUTCAR (FTIR) or OUTCAR.phon (Raman) with the Step1_ExtractModes_FromOUTCAR.sh script
     1. Determine total number of atoms in the CONTCAR file.
-    2. Navigate to where the location of the OUTCAR or OUTCAR.phon file.
+    2. Navigate to where the location of the OUTCAR (Step2_FTIR) or OUTCAR.phon (Step3_Raman) file.
     3. Run Step1_ExtractModes_FromOUTCAR.sh, then enter the total number of atoms in the CONTCAR file from step 1i.
        - This will create a "extractedForMatlab.m" file in the directory from which you ran "Step1_ExtractModes_FromOUTCAR.sh"
 
