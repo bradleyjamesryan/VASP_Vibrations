@@ -15,7 +15,7 @@
 ## Instructions
 0. Perform the appropriate calculations to obtain vibrational data. See either VASP_Vibrations/FTIR_Calculation or VASP_Vibrations/Raman_Calculation for examples.
 
-1. Extract vibrational modes from OUTCAR (FTIR) or OUTCAR.phon (Raman) with the Step1_ExtractModes_FromOUTCAR.sh script
+1. Extract vibrational modes from OUTCAR (located in Step2_FTIR) or OUTCAR.phon (located in Step3_Raman) with the Step1_ExtractModes_FromOUTCAR.sh script
     1. Determine total number of atoms in the CONTCAR file.
     2. Navigate to where the location of the OUTCAR (Step2_FTIR) or OUTCAR.phon (Step3_Raman) file.
     3. Run Step1_ExtractModes_FromOUTCAR.sh, then enter the total number of atoms in the CONTCAR file from step 1i.
