@@ -4,12 +4,12 @@ cd(CONTCARPATH);
 
 if exist('intensities','dir')
     results = dlmread([CONTCARPATH '/intensities/results/results.txt']);
-    calibrate = @(x) 0.951.*x + 49.2;
+    calibrate = @(x) 0.951.*x + 49.2; % Calibration for silicon nanosheets. You might need to change (or remove) this!
 else
     results = dlmread([CONTCARPATH '/vasp_raman.dat'],'',1,0);
     results = results(:,[1 2 5]);
     results(:,3) = normalize(results(:,3));
-    calibrate = @(x) 0.996.*x + 3.94;
+    calibrate = @(x) 0.996.*x + 3.94; % Calibration for silicon nanosheets. You might need to change (or remove) this!
 end
 
 fid = fopen('CONTCAR');
