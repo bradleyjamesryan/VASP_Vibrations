@@ -1,0 +1,315 @@
+ running on   16 total cores
+ distrk:  each k-point on    2 cores,    8 groups
+ distr:  one band on    1 cores,    2 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Aug 06 2018 12:32:45) complex          
+  
+ POSCAR found type information on POSCAR  Si H 
+ POSCAR found :  2 types and       4 ions
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      You have enabled k-point parallelism (KPAR>1).                         |
+|      This developmental code was originally  written by Paul Kent at ORNL,  |
+|      and carefully double checked in Vienna.                                |
+|      GW as well as linear response parallelism added by Martijn Marsman     |
+|      and Georg Kresse.                                                      |
+|      Carefully verify results versus KPAR=1.                                |
+|      Report problems to Paul Kent and Vienna.                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ found WAVECAR, reading the header
+  number of k-points has changed, file:    56 present:   254
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ initial charge from wavefunction
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.167090591023E+02   -0.16709E+02   -0.36647E+02  7876   0.633E+01    0.265E+01
+DAV:   2    -0.174854685911E+02   -0.77641E+00   -0.78906E+00  6420   0.163E+01    0.195E+01
+DAV:   3    -0.174916433794E+02   -0.61748E-02   -0.18177E-01  7558   0.285E+00    0.487E+00
+DAV:   4    -0.174900961882E+02    0.15472E-02   -0.81162E-03  6954   0.552E-01    0.212E-01
+DAV:   5    -0.174901069321E+02   -0.10744E-04   -0.70484E-04  7742   0.164E-01    0.123E-01
+DAV:   6    -0.174902239865E+02   -0.11705E-03   -0.15499E-04  5882   0.779E-02    0.182E-02
+DAV:   7    -0.174903391762E+02   -0.11519E-03   -0.41308E-05  6930   0.402E-02    0.889E-03
+DAV:   8    -0.174904557830E+02   -0.11661E-03   -0.22596E-05  7556   0.249E-02    0.606E-03
+DAV:   9    -0.174905377920E+02   -0.82009E-04   -0.21084E-05  7286   0.210E-02    0.773E-03
+DAV:  10    -0.174905756513E+02   -0.37859E-04   -0.10113E-05  7726   0.139E-02    0.178E-03
+DAV:  11    -0.174905844884E+02   -0.88371E-05   -0.20270E-06  7680   0.716E-03
+   1 F= -.17490584E+02 E0= -.17490584E+02  d E =0.000000E+00
+ Linear response reoptimize wavefunctions to high precision
+DAV:   1    -0.174905855782E+02   -0.10898E-05   -0.37397E-07  7712   0.245E-03
+DAV:   2    -0.174905855784E+02   -0.17383E-09   -0.16448E-09  6774   0.278E-04
+DAV:   3    -0.174905855784E+02    0.12506E-11   -0.35951E-11  8432   0.360E-05
+ Linear response G [H, r] |phi>, progress :
+  Direction:   1
+       N       E                     dE             d eps       ncg     rms
+RMM:   1    -0.408344887650E+02   -0.40834E+02    0.49650E+01 12352   0.517E+01
+RMM:   2    -0.362832623887E+02    0.45512E+01   -0.33759E+00  8823   0.126E+01
+RMM:   3    -0.363072408759E+02   -0.23978E-01   -0.75188E-02  9242   0.183E+00
+RMM:   4    -0.363064936746E+02    0.74720E-03   -0.16746E-03  9693   0.259E-01
+RMM:   5    -0.363064739788E+02    0.19696E-04   -0.67404E-05  9721   0.443E-02
+RMM:   6    -0.363064720957E+02    0.18831E-05   -0.55473E-06  9546   0.783E-03
+ Linear response G [H, r] |phi>, progress :
+  Direction:   2
+       N       E                     dE             d eps       ncg     rms
+RMM:   1    -0.417805957111E+02   -0.41781E+02    0.40187E+01 12427   0.516E+01
+RMM:   2    -0.362829490366E+02    0.54976E+01   -0.33869E+00  8877   0.128E+01
+RMM:   3    -0.363070860353E+02   -0.24137E-01   -0.74646E-02  9104   0.185E+00
+RMM:   4    -0.363064845743E+02    0.60146E-03   -0.15886E-03  9760   0.264E-01
+RMM:   5    -0.363064726097E+02    0.11965E-04   -0.58329E-05  9771   0.450E-02
+RMM:   6    -0.363064714882E+02    0.11215E-05   -0.42574E-06  9422   0.796E-03
+ Linear response G [H, r] |phi>, progress :
+  Direction:   3
+       N       E                     dE             d eps       ncg     rms
+RMM:   1    -0.360467218768E+02   -0.36047E+02    0.10583E+02 11182   0.598E+01
+RMM:   2    -0.362952955127E+02   -0.24857E+00   -0.29047E+00  8657   0.124E+01
+RMM:   3    -0.363586394887E+02   -0.63344E-01   -0.86029E-02  9479   0.196E+00
+RMM:   4    -0.363605780858E+02   -0.19386E-02   -0.21282E-03 10503   0.320E-01
+RMM:   5    -0.363605975705E+02   -0.19485E-04   -0.59668E-05 10265   0.539E-02
+RMM:   6    -0.363605987109E+02   -0.11403E-05   -0.53401E-06 10484   0.103E-02
+ Linear response to external field (no local field effect), progress :
+  Direction:   1
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.123325956135E+01   -0.12333E+01   -0.55321E+00 10749   0.420E+00
+RMM:   2    -0.127125253233E+01   -0.37993E-01   -0.11020E-02  8849   0.751E-01
+RMM:   3    -0.127140190030E+01   -0.14937E-03   -0.15560E-04  8977   0.836E-02
+RMM:   4    -0.127140421726E+01   -0.23170E-05   -0.37864E-06  9370   0.119E-02
+ change of polarisation eV/A/(eV/A) component  1 :     2.543     0.000     0.000
+ dielectric tensor                  component  1 :     2.856     0.000     0.000
+ Linear response to external field (no local field effect), progress :
+  Direction:   2
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.123369130901E+01   -0.12337E+01   -0.55364E+00 10758   0.412E+00
+RMM:   2    -0.127125572444E+01   -0.37564E-01   -0.10851E-02  8814   0.735E-01
+RMM:   3    -0.127140240132E+01   -0.14668E-03   -0.15482E-04  8967   0.823E-02
+RMM:   4    -0.127140470489E+01   -0.23036E-05   -0.37566E-06  9303   0.117E-02
+ change of polarisation eV/A/(eV/A) component  2 :     0.000     2.543    -0.000
+ dielectric tensor                  component  2 :     0.000     2.856    -0.000
+ Linear response to external field (no local field effect), progress :
+  Direction:   3
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.538189862986E+00   -0.53819E+00   -0.97210E-01 10650   0.385E+00
+RMM:   2    -0.549450326815E+00   -0.11260E-01   -0.57686E-03  9118   0.646E-01
+RMM:   3    -0.549540916156E+00   -0.90589E-04   -0.99346E-05  9421   0.723E-02
+RMM:   4    -0.549541903859E+00   -0.98770E-06   -0.16432E-06  9704   0.103E-02
+ change of polarisation eV/A/(eV/A) component  3 :     0.000    -0.000     1.099
+ dielectric tensor                  component  3 :     0.000    -0.000     1.802
+ Linear response to external field, progress :
+  Direction:   1
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.123325956135E+01   -0.12333E+01   -0.55321E+00 10749   0.420E+00
+RMM:   2    -0.127125253233E+01   -0.37993E-01   -0.11020E-02  8849   0.751E-01    0.152E+00
+RMM:   3    -0.124082703341E+01    0.30425E-01   -0.26478E-02  8845   0.856E-01    0.866E-01
+RMM:   4    -0.128966311614E+01   -0.48836E-01   -0.37955E-02  8965   0.106E+00    0.147E-01
+RMM:   5    -0.130529554029E+01   -0.15632E-01   -0.14224E-03  8910   0.256E-01    0.274E-02
+RMM:   6    -0.130561606694E+01   -0.32053E-03   -0.22688E-05  9630   0.335E-02    0.192E-02
+RMM:   7    -0.130713471396E+01   -0.15186E-02   -0.28401E-05  8259   0.380E-02    0.501E-03
+RMM:   8    -0.130721912522E+01   -0.84411E-04   -0.99625E-07  9426   0.612E-03    0.127E-03
+RMM:   9    -0.130730382636E+01   -0.84701E-04   -0.16376E-07  6754   0.274E-03    0.626E-04
+RMM:  10    -0.130731172682E+01   -0.79005E-05   -0.22996E-08  4752   0.119E-03    0.862E-05
+ change of polarisation eV/A/(eV/A) component  1 :     2.428     0.000     0.000
+ dielectric tensor                  component  1 :     2.772     0.000     0.000
+ Linear response to external field, progress :
+  Direction:   2
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.123369130901E+01   -0.12337E+01   -0.55364E+00 10758   0.412E+00
+RMM:   2    -0.127125572444E+01   -0.37564E-01   -0.10851E-02  8814   0.735E-01    0.152E+00
+RMM:   3    -0.124085232921E+01    0.30403E-01   -0.26624E-02  8836   0.856E-01    0.866E-01
+RMM:   4    -0.128966907051E+01   -0.48817E-01   -0.38015E-02  8917   0.106E+00    0.147E-01
+RMM:   5    -0.130526679266E+01   -0.15598E-01   -0.14246E-03  8855   0.256E-01    0.274E-02
+RMM:   6    -0.130561603945E+01   -0.34925E-03   -0.22737E-05  9537   0.338E-02    0.190E-02
+RMM:   7    -0.130713868774E+01   -0.15226E-02   -0.27902E-05  8270   0.376E-02    0.477E-03
+RMM:   8    -0.130722143669E+01   -0.82749E-04   -0.99427E-07  9363   0.606E-03    0.119E-03
+RMM:   9    -0.130730429216E+01   -0.82855E-04   -0.16707E-07  6681   0.275E-03    0.612E-04
+RMM:  10    -0.130731141314E+01   -0.71210E-05   -0.27912E-08  4651   0.121E-03    0.834E-05
+ change of polarisation eV/A/(eV/A) component  2 :     0.000     2.428    -0.000
+ dielectric tensor                  component  2 :     0.000     2.772    -0.000
+ Linear response to external field, progress :
+  Direction:   3
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.538189862986E+00   -0.53819E+00   -0.97210E-01 10650   0.385E+00
+RMM:   2    -0.549450326815E+00   -0.11260E-01   -0.57686E-03  9118   0.646E-01    0.156E+00
+RMM:   3    -0.251707703045E+00    0.29774E+00   -0.22261E-01  8092   0.153E+00    0.433E-01
+RMM:   4    -0.198227351638E+00    0.53480E-01   -0.57264E-02  7922   0.794E-01    0.280E-01
+RMM:   5    -0.179911222753E+00    0.18316E-01   -0.96156E-03  7590   0.482E-01    0.102E-01
+RMM:   6    -0.176356355862E+00    0.35549E-02   -0.20312E-03  7892   0.176E-01    0.652E-02
+RMM:   7    -0.174329591047E+00    0.20268E-02   -0.95237E-04  7397   0.149E-01    0.313E-02
+RMM:   8    -0.174403549808E+00   -0.73959E-04   -0.44538E-04  7661   0.778E-02    0.124E-02
+RMM:   9    -0.174718843008E+00   -0.31529E-03   -0.34520E-04  7098   0.649E-02    0.930E-03
+RMM:  10    -0.174908246907E+00   -0.18940E-03   -0.55654E-05  8232   0.269E-02    0.407E-03
+RMM:  11    -0.174988122105E+00   -0.79875E-04   -0.50645E-05  7865   0.233E-02    0.197E-03
+RMM:  12    -0.174968395915E+00    0.19726E-04   -0.35781E-06  7607   0.710E-03    0.159E-03
+RMM:  13    -0.174906805621E+00    0.61590E-04   -0.18261E-06  7029   0.649E-03    0.602E-04
+RMM:  14    -0.174887486758E+00    0.19319E-04   -0.24317E-07  5922   0.222E-03    0.469E-04
+RMM:  15    -0.174883396920E+00    0.40898E-05   -0.14366E-07  5156   0.160E-03    0.110E-04
+ change of polarisation eV/A/(eV/A) component  3 :     0.000    -0.000     0.327
+ dielectric tensor                  component  3 :     0.000    -0.000     1.239
+ Linear response DOF=          12
+ Linear response progress:
+  Degree of freedom:   1/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.197030426291E-01   -0.19703E-01    0.14273E-02 12282   0.982E-01
+RMM:   2    -0.172632229604E-01    0.24398E-02   -0.85537E-04  7910   0.212E-01    0.965E-02
+RMM:   3    -0.172397182559E-01    0.23505E-04   -0.41069E-05  8559   0.425E-02    0.571E-02
+RMM:   4    -0.173321124189E-01   -0.92394E-04   -0.48978E-05  7792   0.445E-02    0.623E-03
+RMM:   5    -0.173061837599E-01    0.25929E-04   -0.20550E-06  8977   0.937E-03    0.236E-03
+RMM:   6    -0.172972301975E-01    0.89536E-05   -0.15276E-07  9276   0.225E-03    0.107E-03
+ force on displaced ion       1 direction 1 : -14.132  -0.000  -0.000
+ Born effective charge ion    1 direction 1 :   0.392  -0.000   0.000
+ Linear response progress:
+  Degree of freedom:   2/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.196448498178E-01   -0.19645E-01    0.14812E-02 12375   0.981E-01
+RMM:   2    -0.172634642411E-01    0.23814E-02   -0.86933E-04  7926   0.211E-01    0.965E-02
+RMM:   3    -0.172398071073E-01    0.23657E-04   -0.41504E-05  8515   0.427E-02    0.571E-02
+RMM:   4    -0.173318761943E-01   -0.92069E-04   -0.48635E-05  7832   0.445E-02    0.625E-03
+RMM:   5    -0.173067076162E-01    0.25169E-04   -0.19964E-06  9011   0.930E-03    0.241E-03
+RMM:   6    -0.172972944886E-01    0.94131E-05   -0.15158E-07  9256   0.233E-03    0.107E-03
+ force on displaced ion       1 direction 2 :  -0.000 -14.135  -0.000
+ Born effective charge ion    1 direction 2 :   0.000   0.392   0.000
+ Linear response progress:
+  Degree of freedom:   3/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.335347206396E-01   -0.33535E-01    0.32778E-02 12152   0.135E+00
+RMM:   2    -0.300838273040E-01    0.34509E-02   -0.18388E-03  8039   0.321E-01    0.139E-01
+RMM:   3    -0.298425148949E-01    0.24131E-03   -0.18821E-04  8006   0.725E-02    0.741E-02
+RMM:   4    -0.298095478984E-01    0.32967E-04   -0.93906E-05  8612   0.548E-02    0.147E-02
+RMM:   5    -0.297920362931E-01    0.17512E-04   -0.15067E-05  8923   0.197E-02    0.417E-03
+RMM:   6    -0.298013121257E-01   -0.92758E-05   -0.11662E-06  9015   0.561E-03    0.192E-03
+ force on displaced ion       1 direction 3 :  -0.000   0.000 -22.879
+ Born effective charge ion    1 direction 3 :  -0.000   0.000   0.167
+ Linear response progress:
+  Degree of freedom:   4/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.197029562817E-01   -0.19703E-01    0.14273E-02 12282   0.982E-01
+RMM:   2    -0.172633367744E-01    0.24396E-02   -0.85656E-04  7910   0.212E-01    0.965E-02
+RMM:   3    -0.172397306295E-01    0.23606E-04   -0.41220E-05  8548   0.425E-02    0.571E-02
+RMM:   4    -0.173321158980E-01   -0.92385E-04   -0.49025E-05  7792   0.445E-02    0.623E-03
+RMM:   5    -0.173061820432E-01    0.25934E-04   -0.20568E-06  8979   0.937E-03    0.236E-03
+RMM:   6    -0.172972266645E-01    0.89554E-05   -0.14577E-07  9286   0.225E-03    0.107E-03
+ force on displaced ion       2 direction 1 : -14.126  -0.000  -0.000
+ Born effective charge ion    2 direction 1 :   0.392  -0.000   0.000
+ Linear response progress:
+  Degree of freedom:   5/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.196447168296E-01   -0.19645E-01    0.14813E-02 12377   0.981E-01
+RMM:   2    -0.172632015398E-01    0.23815E-02   -0.86797E-04  7924   0.211E-01    0.965E-02
+RMM:   3    -0.172396540841E-01    0.23547E-04   -0.41293E-05  8492   0.427E-02    0.571E-02
+RMM:   4    -0.173317283109E-01   -0.92074E-04   -0.48515E-05  7832   0.445E-02    0.625E-03
+RMM:   5    -0.173065752434E-01    0.25153E-04   -0.19997E-06  9008   0.930E-03    0.241E-03
+RMM:   6    -0.172971615131E-01    0.94137E-05   -0.16655E-07  9259   0.233E-03    0.107E-03
+ force on displaced ion       2 direction 2 :  -0.000 -14.130  -0.000
+ Born effective charge ion    2 direction 2 :  -0.000   0.392   0.000
+ Linear response progress:
+  Degree of freedom:   6/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.335342267902E-01   -0.33534E-01    0.32773E-02 12152   0.135E+00
+RMM:   2    -0.300831825599E-01    0.34510E-02   -0.18388E-03  8039   0.321E-01    0.139E-01
+RMM:   3    -0.298418811547E-01    0.24130E-03   -0.18811E-04  8013   0.724E-02    0.741E-02
+RMM:   4    -0.298088941045E-01    0.32987E-04   -0.93837E-05  8807   0.548E-02    0.147E-02
+RMM:   5    -0.297913789276E-01    0.17515E-04   -0.15056E-05  8831   0.197E-02    0.417E-03
+RMM:   6    -0.298006436607E-01   -0.92647E-05   -0.11598E-06  8995   0.561E-03    0.192E-03
+ force on displaced ion       2 direction 3 :  -0.000   0.000 -22.879
+ Born effective charge ion    2 direction 3 :  -0.000  -0.000   0.167
+ Linear response progress:
+  Degree of freedom:   7/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.165601147798E-01   -0.16560E-01   -0.10352E-02  9347   0.748E-01
+RMM:   2    -0.161797399192E-01    0.38037E-03   -0.25649E-04  8140   0.119E-01    0.985E-02
+RMM:   3    -0.163912985431E-01   -0.21156E-03   -0.74481E-05  8352   0.434E-02    0.566E-02
+RMM:   4    -0.169205205350E-01   -0.52922E-03   -0.11760E-04  7836   0.535E-02    0.488E-03
+RMM:   5    -0.169281595522E-01   -0.76390E-05   -0.25921E-06  9024   0.109E-02    0.765E-04
+ force on displaced ion       3 direction 1 :  -1.383   0.000   0.000
+ Born effective charge ion    3 direction 1 :  -0.397  -0.000  -0.000
+ Linear response progress:
+  Degree of freedom:   8/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.165617573001E-01   -0.16562E-01   -0.10369E-02  9356   0.747E-01
+RMM:   2    -0.161797423605E-01    0.38201E-03   -0.25558E-04  8175   0.118E-01    0.985E-02
+RMM:   3    -0.163921092029E-01   -0.21237E-03   -0.74313E-05  8344   0.431E-02    0.566E-02
+RMM:   4    -0.169206922852E-01   -0.52858E-03   -0.11760E-04  7847   0.533E-02    0.487E-03
+RMM:   5    -0.169279471809E-01   -0.72549E-05   -0.26043E-06  9032   0.109E-02    0.775E-04
+ force on displaced ion       3 direction 2 :   0.000  -1.382  -0.000
+ Born effective charge ion    3 direction 2 :  -0.000  -0.397   0.000
+ Linear response progress:
+  Degree of freedom:   9/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.189222100233E-01   -0.18922E-01    0.57688E-03 12668   0.814E-01
+RMM:   2    -0.178307373065E-01    0.10915E-02   -0.66048E-04  8033   0.183E-01    0.140E-01
+RMM:   3    -0.179619009167E-01   -0.13116E-03   -0.27029E-04  7638   0.770E-02    0.804E-02
+RMM:   4    -0.185315180973E-01   -0.56962E-03   -0.27367E-04  7712   0.796E-02    0.142E-02
+RMM:   5    -0.185609016353E-01   -0.29384E-04   -0.86833E-06  9249   0.175E-02    0.461E-03
+RMM:   6    -0.185469539073E-01    0.13948E-04   -0.57949E-07  8273   0.467E-03    0.911E-04
+RMM:   7    -0.185412416409E-01    0.57123E-05   -0.65316E-08  8856   0.133E-03    0.620E-04
+ force on displaced ion       3 direction 3 :   0.000   0.000 -16.220
+ Born effective charge ion    3 direction 3 :  -0.000  -0.000  -0.152
+ Linear response progress:
+  Degree of freedom:  10/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.165595858728E-01   -0.16560E-01   -0.10352E-02  9347   0.748E-01
+RMM:   2    -0.161792261156E-01    0.38036E-03   -0.25645E-04  8142   0.119E-01    0.985E-02
+RMM:   3    -0.163907918310E-01   -0.21157E-03   -0.74462E-05  8464   0.434E-02    0.566E-02
+RMM:   4    -0.169199391268E-01   -0.52915E-03   -0.11758E-04  7863   0.535E-02    0.488E-03
+RMM:   5    -0.169275762805E-01   -0.76372E-05   -0.25913E-06  9026   0.109E-02    0.765E-04
+ force on displaced ion       4 direction 1 :  -1.383   0.000   0.000
+ Born effective charge ion    4 direction 1 :  -0.397  -0.000  -0.000
+ Linear response progress:
+  Degree of freedom:  11/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.165612452411E-01   -0.16561E-01   -0.10369E-02  9354   0.747E-01
+RMM:   2    -0.161792291900E-01    0.38202E-03   -0.25557E-04  8170   0.118E-01    0.985E-02
+RMM:   3    -0.163916060581E-01   -0.21238E-03   -0.74319E-05  8428   0.431E-02    0.566E-02
+RMM:   4    -0.169201081292E-01   -0.52850E-03   -0.11757E-04  7889   0.533E-02    0.487E-03
+RMM:   5    -0.169273618620E-01   -0.72537E-05   -0.26027E-06  9032   0.109E-02    0.775E-04
+ force on displaced ion       4 direction 2 :   0.000  -1.382  -0.000
+ Born effective charge ion    4 direction 2 :   0.000  -0.397   0.000
+ Linear response progress:
+  Degree of freedom:  12/ 12
+       N       E                     dE             d eps       ncg     rms          rms(c)
+RMM:   1    -0.189216374928E-01   -0.18922E-01    0.57677E-03 12668   0.814E-01
+RMM:   2    -0.178301482804E-01    0.10915E-02   -0.66043E-04  8050   0.183E-01    0.140E-01
+RMM:   3    -0.179611441392E-01   -0.13100E-03   -0.27024E-04  7755   0.769E-02    0.804E-02
+RMM:   4    -0.185306238014E-01   -0.56948E-03   -0.27351E-04  7907   0.795E-02    0.142E-02
+RMM:   5    -0.185599103038E-01   -0.29287E-04   -0.86751E-06  9243   0.175E-02    0.460E-03
+RMM:   6    -0.185460196223E-01    0.13891E-04   -0.57424E-07  8332   0.467E-03    0.912E-04
+RMM:   7    -0.185403312136E-01    0.56884E-05   -0.62770E-08  8720   0.134E-03    0.620E-04
+ force on displaced ion       4 direction 3 :   0.000   0.000 -16.220
+ Born effective charge ion    4 direction 3 :  -0.000  -0.000  -0.152
+ Born effective charges drift removed
+ Linear response finished
+ writing wavefunctions
