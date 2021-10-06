@@ -1,0 +1,92 @@
+
+    Raman off-resonant activity calculator,
+    using VASP as a back-end.
+
+    Contributors: Alexandr Fonari  (Georgia Tech)
+                  Shannon Stauffer (UT Austin)
+    MIT License, 2013
+    URL: http://raman-sc.github.io
+    Started at: 2021-10-06 09:23
+
+[__main__]: VASP_RAMAN_RUN='mpirun -n 16 /opt/bin/vasp-ncl > vasp_raman_out'
+[__main__]: VASP_RAMAN_PARAMS='01_100_2_0.01'
+[[1.2051616540986454e-05, 2.24527551346165, 2.8428939864715863], [1.944484701657667, 1.122633663318514, 2.124275790441148], [9.58647219396855e-06, 2.2452711443095783, 4.3434903636088285], [1.9444820719863127, 1.1226294781108457, 0.6086205375739823]]
+
+[__main__]: Mode #1: frequency 2136.2668870 cm-1; norm:  0.9832734
+[__main__]: File OUTCAR.0001.-1.out exists, parsing...
+[__main__]: File OUTCAR.0001.+1.out exists, parsing...
+
+!    1  freq: 2136.26689  alpha:  0.0844907  beta2:  0.1702297  activity:  1.5128483 
+
+[__main__]: Mode #2: frequency 2129.8528290 cm-1; norm:  0.9847386
+[__main__]: File OUTCAR.0002.-1.out exists, parsing...
+[__main__]: File OUTCAR.0002.+1.out exists, parsing...
+
+!    2  freq: 2129.85283  alpha:  3.2777276  beta2: 134.8799984  activity: 1427.6174206 
+
+[__main__]: Mode #3: frequency 730.2294900 cm-1; norm:  0.9565784
+[__main__]: File OUTCAR.0003.-1.out exists, parsing...
+[__main__]: File OUTCAR.0003.+1.out exists, parsing...
+
+!    3  freq:  730.22949  alpha:  0.0002957  beta2: 59.9500517  activity: 419.6503656 
+
+[__main__]: Mode #4: frequency 726.9904760 cm-1; norm:  0.9551382
+[__main__]: File OUTCAR.0004.-1.out exists, parsing...
+[__main__]: File OUTCAR.0004.+1.out exists, parsing...
+
+!    4  freq:  726.99048  alpha:  0.0015745  beta2: 60.3731265  activity: 422.6119972 
+
+[__main__]: Mode #5: frequency 513.5877590 cm-1; norm:  0.9835150
+[__main__]: File OUTCAR.0005.-1.out exists, parsing...
+[__main__]: File OUTCAR.0005.+1.out exists, parsing...
+
+!    5  freq:  513.58776  alpha:  0.0003040  beta2:  0.0081515  activity:  0.0570650 
+
+[__main__]: Mode #6: frequency 511.8420550 cm-1; norm:  0.9834169
+[__main__]: File OUTCAR.0006.-1.out exists, parsing...
+[__main__]: File OUTCAR.0006.+1.out exists, parsing...
+
+!    6  freq:  511.84206  alpha:  0.0002026  beta2:  0.0090257  activity:  0.0631814 
+
+[__main__]: Mode #7: frequency 488.1759180 cm-1; norm:  0.3472729
+[__main__]: File OUTCAR.0007.-1.out exists, parsing...
+[__main__]: File OUTCAR.0007.+1.out exists, parsing...
+
+!    7  freq:  488.17592  alpha: -0.0007872  beta2: 36.2188325  activity: 253.5318555 
+
+[__main__]: Mode #8: frequency 487.6712470 cm-1; norm:  0.3511424
+[__main__]: File OUTCAR.0008.-1.out exists, parsing...
+[__main__]: File OUTCAR.0008.+1.out exists, parsing...
+
+!    8  freq:  487.67125  alpha:  0.0040520  beta2: 35.7896189  activity: 250.5280710 
+
+[__main__]: Mode #9: frequency 384.1066620 cm-1; norm:  0.2566986
+[__main__]: File OUTCAR.0009.-1.out exists, parsing...
+[__main__]: File OUTCAR.0009.+1.out not found, preparing displaced POSCAR
+[__main__]: Running VASP...
+
+!    9  freq:  384.10666  alpha: -2.1425234  beta2:  2.2835821  activity: 222.5533599 
+
+[__main__]: Mode #10: frequency  0.1392960 cm-1; norm:  0.2622563
+[__main__]: File OUTCAR.0010.-1.out not found, preparing displaced POSCAR
+[__main__]: Running VASP...
+[__main__]: File OUTCAR.0010.+1.out not found, preparing displaced POSCAR
+[__main__]: Running VASP...
+
+!   10  freq:    0.13930  alpha:  0.0002972  beta2:  0.0000001  activity:  0.0000044 
+
+[__main__]: Mode #11: frequency  0.5540400 cm-1; norm:  0.2616826
+[__main__]: File OUTCAR.0011.-1.out not found, preparing displaced POSCAR
+[__main__]: Running VASP...
+[__main__]: File OUTCAR.0011.+1.out not found, preparing displaced POSCAR
+[__main__]: Running VASP...
+
+!   11  freq:    0.55404  alpha: -0.0009706  beta2:  0.0000014  activity:  0.0000523 
+
+[__main__]: Mode #12: frequency  0.7433260 cm-1; norm:  0.2613558
+[__main__]: File OUTCAR.0012.-1.out not found, preparing displaced POSCAR
+[__main__]: Running VASP...
+[__main__]: File OUTCAR.0012.+1.out not found, preparing displaced POSCAR
+[__main__]: Running VASP...
+
+!   12  freq:    0.74333  alpha:  0.0005386  beta2:  0.0000006  activity:  0.0000175 
