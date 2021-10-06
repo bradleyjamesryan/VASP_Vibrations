@@ -28,8 +28,6 @@ for ii = 1:length(data)
    plot([data(ii,2) data(ii,2)],[1 1-data2(ii)],'b') 
 end
 
-
-
 set(findall(gca, 'Type', 'Line'),'LineWidth',plotLineWidth);
 set(gca,'linewidth',axLineWidth,'XMinorTick','on','YMinorTick','on','fontsize',AxisNumberSize,'tickdir','out','MinorGridLineStyle','-');
 set(gca,'xtick',[500 1000 1500 2000 2500 3000 3500 4000]);
