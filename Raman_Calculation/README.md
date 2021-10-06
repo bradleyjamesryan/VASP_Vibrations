@@ -6,9 +6,8 @@ https://github.com/raman-sc/VASP
 2. After the relaxation has completed, copy the Step1_Relax folder to a new folder (Step2_FiniteDiff), copy CONTCAR to POSCAR, and run a finite difference calculation. See provided example in "Step2_FiniteDiff".
 3. After the finite difference calculation has completed, copy the Step2_FiniteDiff folder to a new folder (Step3_Raman), navigate to the Step3_Raman folder, issue the following commands:
 
-     cp CONTCAR POSCAR
-     
-     mkdir PHONON
+cp CONTCAR POSCAR  
+mkdir PHONON
      mv * PHONON/.
      cp PHONON/KPOINTS .
      cp PHONON/OUTCAR .
